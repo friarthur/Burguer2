@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.payment-container {
+    display: flex;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-details h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #FF4500;
+}
+
+.product-details p {
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 0;
+}
+
+button {
+    padding: 12px 18px;
+    margin-top: 20px;
+    background-color: #FF4500;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF6347;
+}
+
+.payment-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.payment-icons i {
+    font-size: 36px;
+    color: #FF4500;
+}
