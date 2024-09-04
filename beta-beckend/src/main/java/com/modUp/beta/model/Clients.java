@@ -1,6 +1,5 @@
 package com.modUp.beta.model;
 
-
 import jakarta.persistence.*;
 
 @Entity
@@ -14,14 +13,42 @@ public class Clients {
     @Column(length = 50,nullable = false)
     private String name;
     @Column(length = 50, nullable = false)
-    private String userName;
+    private String lastName;
     @Column(length = 50, nullable = false)
     private String password;
     @Column(length = 50,nullable = false)
     private String email;
+    @Column(length = 15, nullable = false)
+    private String phone;
+    @Column(length = 3, nullable = false)
+    private String age;
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
 
 
-    //getters and setters
+//getters and setters
 
     public String getEmail() {
         return email;
@@ -49,11 +76,11 @@ public class Clients {
     }
 
     public String getUserName() {
-        return userName;
+        return lastName;
     }
 
     public void setUserName(String userName) {
-        this.userName = userName;
+        this.lastName = userName;
     }
 
     public String getPassword() {
@@ -73,8 +100,11 @@ public class Clients {
         return "Clients{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", userName='" + userName + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", age='" + age + '\'' +
                 '}';
     }
 }
